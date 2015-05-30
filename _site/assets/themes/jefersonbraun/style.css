@@ -1,0 +1,15 @@
+.featured {
+    height:500px;
+    position: relative;
+}
+
+    .featured div {
+        position: absolute;
+        bottom: 0;
+    }
+
+    .featured h2 {
+        font-size: 42px;
+        font-family: sans-serif;
+        font-weight: bold;
+    }

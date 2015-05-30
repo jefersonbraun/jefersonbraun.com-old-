@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{{ page.title }}</title>
+        {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+        <meta name="author" content="{{ site.author.name }}">
+        
+        <!-- Enable responsive viewport -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Foundation styles -->
+        <link href="{{ ASSET_PATH }}/foundation/css/foundation.min.css" rel="stylesheet">
+        <link href="{{ ASSET_PATH }}/style.css" rel="stylesheet">
+        <script src="{{ ASSET_PATH }}/js/vendor/modernizr.js"></script>
+    </head>
+
+    <body>
+        {{ content }}
+        <script src="{{ ASSET_PATH }}/js/vendor/jquery.js"></script>
+        <script src="{{ ASSET_PATH }}/js/foundation.min.js"></script>
+        <script>
+          $(document).foundation();
+        </script>
+    </body>
+
+</html>

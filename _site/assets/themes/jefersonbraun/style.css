@@ -1,15 +1,35 @@
-.featured {
-    height:500px;
-    position: relative;
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,300);
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'open-sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-    .featured div {
-        position: absolute;
-        bottom: 0;
+.contain-to-grid, .top-bar {
+    background: white;
+}
+
+.featured {
+    background-position: center;
+    height:500px;
+}
+
+    .featured a {
+        text-decoration: none;
+    }
+    .featured h2 {
+        color: white;
+        font-size: 60px;
+        font-family: sans-serif;
+        font-weight: 700;
+        margin-bottom: 0px;
+        
+        /** workaround **/
+        margin-top: 230px;
     }
 
-    .featured h2 {
-        font-size: 42px;
-        font-family: sans-serif;
-        font-weight: bold;
+    .featured h4 {
+        font-size: 36px;
+        color: #eee;
+        font-weight: lighter;
+        margin-top: 0px;
     }

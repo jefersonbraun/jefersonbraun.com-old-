@@ -10,15 +10,23 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <!-- Foundation styles -->
-        <link href="{{ ASSET_PATH }}/foundation/css/foundation.min.css" rel="stylesheet">
+        <link href="{{ ASSET_PATH }}/foundation/css/foundation.css" rel="stylesheet">
         <link href="{{ ASSET_PATH }}/style.css" rel="stylesheet">
-        <script src="{{ ASSET_PATH }}/js/vendor/modernizr.js"></script>
+        
+        <script src="{{ ASSET_PATH }}/foundation/js/vendor/modernizr.js"></script>
     </head>
 
     <body>
+        <div class="contain-to-grid sticky">
+            <nav class="top-bar" data-topbar role="navigation">
+                Jeferson<b>Braun</b>
+            </nav>
+        </div>
         {{ content }}
-        <script src="{{ ASSET_PATH }}/js/vendor/jquery.js"></script>
-        <script src="{{ ASSET_PATH }}/js/foundation.min.js"></script>
+        <script src="{{ ASSET_PATH }}/foundation/js/vendor/jquery.js"></script>
+        <script src="{{ ASSET_PATH }}/foundation/js/foundation/foundation.js"></script>
+        <script src="{{ ASSET_PATH }}/foundation/js/foundation/foundation.topbar.js"></script>
+        
         <script>
           $(document).foundation();
         </script>
